@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.LoginViewController">
+   <children>
+      <TextField fx:id="user_textfield" layoutX="108.0" layoutY="359.0" onAction="#user_login" prefHeight="25.0" prefWidth="175.0" promptText="user" />
+      <PasswordField fx:id="password_passfield" layoutX="108.0" layoutY="417.0" onAction="#user_login" prefHeight="25.0" prefWidth="175.0" promptText="password" />
+      <ImageView fitHeight="278.0" fitWidth="333.0" layoutX="56.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/trucklogo.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="invalid_text" fill="#9a3333" layoutX="195.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" ">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
