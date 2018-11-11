@@ -14,14 +14,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.MainViewController">
    <children>
       <MenuBar prefHeight="25.0" prefWidth="1287.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem fx:id="close" mnemonicParsing="false" text="Close" />
+              <MenuItem fx:id="close" mnemonicParsing="false" onAction="#exit" text="Close" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
@@ -38,10 +37,10 @@
       </MenuBar>
       <HBox layoutY="25.0" prefHeight="75.0" prefWidth="1280.0" spacing="50.0">
          <children>
-            <Button fx:id="launchAddView" mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" text="Add" />
-            <Button fx:id="edit" mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" text="Edit" />
-            <Button fx:id="launchHistoryView" mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" text="History" />
-            <Button fx:id="delete" mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" text="Delete" />
+            <Button fx:id="launchAddView" mnemonicParsing="false" onAction="#addView" prefHeight="50.0" prefWidth="75.0" text="Add" />
+            <Button fx:id="edit" mnemonicParsing="false" onAction="#editView" prefHeight="50.0" prefWidth="75.0" text="Edit" />
+            <Button fx:id="launchHistoryView" mnemonicParsing="false" onAction="#hisView" prefHeight="50.0" prefWidth="75.0" text="History" />
+            <Button fx:id="delete" mnemonicParsing="false" onAction="#delView" prefHeight="50.0" prefWidth="75.0" text="Delete" />
             <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="75.0" text="Extra" />
          </children>
          <padding>
