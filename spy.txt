@@ -27,3 +27,8 @@ Add Views : 2
 Edit Views : 1
 History Views : 1
 Delete Views : 1
+admin
+Add Views : 2
+Edit Views : 1
+History Views : 1
+Delete Views : 2
